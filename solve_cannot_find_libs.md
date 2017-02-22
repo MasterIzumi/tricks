@@ -5,7 +5,7 @@
 ```
 $ error while loading shared libraries: libg2o_core.so: cannot open shared object file: No such file or directory
 ```
-这个错误的意思是找不到libg2o_core.so这个共享库，但是实际上在安装g2o时将文件放在了/usr/local/lib 下，但是由于没有配置，系统没法到这个目录下查找，所以在运行时报错。  
+这个错误的意思是找不到libg2o_core.so这个共享库，实际上在安装g2o时将文件放在了/usr/local/lib下。但是由于没有配置参数，系统没法到这个目录下查找，所以在运行时报错。  
 
 ##解决办法
 创建一个文件
@@ -26,7 +26,8 @@ sudo ldconfig -v
 ```
 find /usr/ -name libg2o_core.so -print
 ```
-如果改文件在/usr 下，则会显示出其路径位置。
+如果该文件在/usr下，则会显示出其路径位置。
 
 ##Reference
-http://stackoverflow.com/questions/12335848/opencv-program-compile-error-libopencv-core-so-2-4-cannot-open-shared-object-f
+* http://stackoverflow.com/questions/12335848/opencv-program-compile-error-libopencv-core-so-2-4-cannot-open-shared-object-f  
+* http://www.cnblogs.com/Anker/p/3209876.html
