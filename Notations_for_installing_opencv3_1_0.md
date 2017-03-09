@@ -6,7 +6,6 @@
 [compiler] sudo apt-get install build-essential  
 [required] sudo apt-get install cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev  
 [optional] sudo apt-get install python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff-dev libjasper-dev libdc1394-22-dev
-
 ```
 
 ##Getting Source Code
@@ -15,7 +14,6 @@
 cd ~/<my_working_directory>  
 git clone https://github.com/Itseez/opencv.git  
 git clone https://github.com/Itseez/opencv_contrib.git  
-
 ```
 
 Then, checkout to version 3.1.0.
@@ -36,5 +34,8 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_
 ##Epilogue
 There are many errors when I was building OpenCV 3.1.0. It seems that all the errors are from opencv_contrib. You can search these errors in google, and nearly all of them are issued in github. Thus, you can lookup the issues and find the changes of the code in corresponding commits.
 
+
+##Reference
+docs.opencv.org/3.1.0/d7/d9f/tutorial_linux_install.html
 
 
