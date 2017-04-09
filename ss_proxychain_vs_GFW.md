@@ -1,27 +1,29 @@
-#环境Ubuntu 14.04LTS
+# 环境Ubuntu 14.04LTS
 
-##1 安装shadowsocks-qt5
+## 1 安装shadowsocks-qt5
 sudo add-apt-repository ppa:hzwhuang/ss-qt5  
 sudo apt-get update  
 sudo apt-get install shadowsocks-qt5  
 
-##2 打开gui配置ss，使用购买的ss服务器
+## 2 打开gui配置ss，使用购买的ss服务器
 
-##3 配置计算机
+## 3 配置计算机
 设置-网络-代理  
 手动		127.0.0.1	1080  //这里的1080是ss服务器的本地端口  
 
 此时，浏览器就可以正常跨越GFW了，但是终端是没法翻的,貌似是因为终端不走socks？终端不翻的话apt-get update根本没法正常更新啊。。  
 
-##4 安装proxychains
+或者，使用火狐的foxyproxy插件对代理进行配置，以实现较为方便的切换。
+
+## 4 安装proxychains
 sudo apt-get install proxychains  
 
-##5 配置proxychains
+## 5 配置proxychains
 sudo vim /etc/proxychains.conf  
 将最后一行的 socks4 xxxx  
 改成 socks5 127.0.0.1 1080  //这里的信息也是ss服务器的本地端口  
 
-##6 重新打开终端，需要走代理时就加上proxychains命令，例如
+## 6 重新打开终端，需要走代理时就加上proxychains命令，例如
 sudo proxychains apt-get update  
 此处可以使用 proxychains curl ip.gs查看本机地址，正常的话应该在境外。  
 也可使用proxychains curl google.com看网络是否连通。  
