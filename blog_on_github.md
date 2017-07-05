@@ -1,4 +1,4 @@
-# Create your own Blog on GiuHub
+# Create your own Blog on GitHub
 
 This is a tutorial of creating a blog on github.io using Hexo.  
 * Environment: Ubuntu 14.04  
@@ -73,6 +73,6 @@ hexo g
 hexo d
 ```
 
-* References  
+## References  
 http://www.jianshu.com/p/e99ed60390a8  
 http://www.jianshu.com/p/a0a27d840992
