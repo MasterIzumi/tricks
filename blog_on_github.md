@@ -1,4 +1,4 @@
-# Create your own Blog on GitHub
+# Create your own webpage on GitHub
 
 This is a tutorial of creating a blog on github.io using Hexo.  
 * Environment: Ubuntu 14.04  
