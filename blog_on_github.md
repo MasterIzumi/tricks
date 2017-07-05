@@ -37,7 +37,7 @@ hexo s    # run local server
 You can test your local server by opening http://localhost:4000.
 
 ### Themes
-Let's try [next]: https://github.com/iissnan/hexo-theme-next  
+Let's try [next](https://github.com/iissnan/hexo-theme-next)  
 ```
 hexo clean
 git clone https://github.com/iissnan/hexo-theme-next themes/next
@@ -73,6 +73,6 @@ hexo g
 hexo d
 ```
 
-* References
-[http://www.jianshu.com/p/e99ed60390a8]: http://www.jianshu.com/p/e99ed60390a8  
-[http://www.jianshu.com/p/a0a27d840992]: http://www.jianshu.com/p/a0a27d840992
+* References  
+http://www.jianshu.com/p/e99ed60390a8  
+http://www.jianshu.com/p/a0a27d840992
